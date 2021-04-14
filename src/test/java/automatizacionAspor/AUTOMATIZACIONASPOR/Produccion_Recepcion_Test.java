@@ -249,8 +249,8 @@ class Produccion_Recepcion_Test extends BaseClass{
 	@Test
 	void ingresar_Recepcion_Poliza_Exitoso() throws Exception {
 		/*
-		 * Implementación: PoC_FUN_012
-		 */
+		 * Implementación: PoC_FUN_012  b
+		 */ 
 		Thread.sleep(3000);
 		takeScreenShotTest(getDriver(), "Produccion_Recepcion ingresar_Recepcion_Poliza_Exitoso");
 		this.getWait().until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText("Recepción"))).click();
