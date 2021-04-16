@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="117.774" tests="6" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Test" time="249.673" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,24 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="login_Sin_Datos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="17.253"/>
-  <testcase name="login_Contrasena_Vacio" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="18.503"/>
-  <testcase name="login_Usuario_Vacio" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="25.281"/>
-  <testcase name="login_Contrasena_No_Valida" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="10.722">
-    <error message="element not interactable&#10;  (Session info: chrome=89.0.4389.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-LI3EA6Q&apos;, ip: &apos;10.212.134.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.e1iT4L}, goog:chromeOptions: {debuggerAddress: localhost:36151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 55967a6b5e7136451aabca4466848b47" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-LI3EA6Q', ip: '10.212.134.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.e1iT4L}, goog:chromeOptions: {debuggerAddress: localhost:36151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 55967a6b5e7136451aabca4466848b47
-	at automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test.login_Contrasena_No_Valida(Login_Test.java:151)
-</error>
-    <system-err><![CDATA[abr 15, 2021 11:43:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFORMACIÓN: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="login_Despliegue" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="19.775"/>
-  <testcase name="login_Exitoso" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="26.234"/>
+  <testcase name="copiar_Vigencias_Y_alternativo_Crear_Plan_Pago" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Test" time="37.758"/>
+  <testcase name="alternativo_Sin_Datos_Crear_Plan_Y_Guardar" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Test" time="40.28"/>
+  <testcase name="despliegue_Digitacion_Poliza" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Test" time="44.807"/>
+  <testcase name="alternativo_Coberturas_Item1" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Test" time="47.787"/>
+  <testcase name="coberturas_Item1_Exitoso" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Test" time="39.126"/>
+  <testcase name="copiar_Vigencias_Y_alternativos_Guardar" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Test" time="39.904"/>
 </testsuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="117.774" tests="6" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="517.007" tests="8" errors="0" skipped="0" failures="8">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,24 +60,89 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="login_Sin_Datos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="17.253"/>
-  <testcase name="login_Contrasena_Vacio" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="18.503"/>
-  <testcase name="login_Usuario_Vacio" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="25.281"/>
-  <testcase name="login_Contrasena_No_Valida" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="10.722">
-    <error message="element not interactable&#10;  (Session info: chrome=89.0.4389.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-LI3EA6Q&apos;, ip: &apos;10.212.134.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.e1iT4L}, goog:chromeOptions: {debuggerAddress: localhost:36151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 55967a6b5e7136451aabca4466848b47" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: chrome=89.0.4389.114)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-LI3EA6Q', ip: '10.212.134.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.e1iT4L}, goog:chromeOptions: {debuggerAddress: localhost:36151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 55967a6b5e7136451aabca4466848b47
-	at automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test.login_Contrasena_No_Valida(Login_Test.java:151)
-</error>
-    <system-err><![CDATA[abr 15, 2021 11:43:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <testcase name="validacion_Datos_DOS_ITEMS_DOS_COBERTURAS_Datos_Incorrectos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="74.292">
+    <failure message="Validación ==&gt; expected: &lt;Inicio validación&#10;Pasó validación Rut del Asegurado ACTIVO&#10;Pasó validación Rut del Contratante ACTIVO&#10;Pasó validación del Estado del Intermediario&#10;Pasó validación de Existencia Coberturas Repetidas&#10;Existen coberturas en 0 o negativas, Revisar&#10;No se evalua las cuotas vs Prima Neta, por falla anterior&#10;No se evalua Existencia de Reaseguro por falla anterior&#10;No se evalua de Vigencias de la póliza&#10;No se evalua las vigencias, por falla anterior&#10;No se evalúa límites por tipo de riesgo&gt; but was: &lt;Inicio validación&#10;Pasó validación Rut del Asegurado ACTIVO&#10;Pasó validación Rut del Contratante ACTIVO&#10;Pasó validación del Estado del Intermediario&#10;Pasó validación de Existencia Coberturas Repetidas&#10;Error, Existen coberturas en 0 o negativas, Revisar&#10;No se evalua las cuotas vs Prima Neta, por falla anterior&#10;No se evalua Existencia de Reaseguro por falla anterior&#10;No se evalua de Vigencias de la póliza&#10;No se evalua las vigencias, por falla anterior&#10;No se evalúa límites por tipo de riesgo&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+Validación ==> expected: <Inicio validación
+Pasó validación Rut del Asegurado ACTIVO
+Pasó validación Rut del Contratante ACTIVO
+Pasó validación del Estado del Intermediario
+Pasó validación de Existencia Coberturas Repetidas
+Existen coberturas en 0 o negativas, Revisar
+No se evalua las cuotas vs Prima Neta, por falla anterior
+No se evalua Existencia de Reaseguro por falla anterior
+No se evalua de Vigencias de la póliza
+No se evalua las vigencias, por falla anterior
+No se evalúa límites por tipo de riesgo> but was: <Inicio validación
+Pasó validación Rut del Asegurado ACTIVO
+Pasó validación Rut del Contratante ACTIVO
+Pasó validación del Estado del Intermediario
+Pasó validación de Existencia Coberturas Repetidas
+Error, Existen coberturas en 0 o negativas, Revisar
+No se evalua las cuotas vs Prima Neta, por falla anterior
+No se evalua Existencia de Reaseguro por falla anterior
+No se evalua de Vigencias de la póliza
+No se evalua las vigencias, por falla anterior
+No se evalúa límites por tipo de riesgo>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.validacion_Datos_DOS_ITEMS_DOS_COBERTURAS_Datos_Incorrectos(Digitacion_Poliza_Validacion_Datos_Test.java:871)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:30:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="login_Despliegue" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="19.775"/>
-  <testcase name="login_Exitoso" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="26.234"/>
+  <testcase name="validacion_Datos_Exitosos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="53.021">
+    <failure message="Validación ==&gt; expected: &lt;Inicio: Tue Jan&gt; but was: &lt;Inicio: Fri Apr&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Validación ==> expected: <Inicio: Tue Jan> but was: <Inicio: Fri Apr>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.validacion_Datos_Exitosos(Digitacion_Poliza_Validacion_Datos_Test.java:139)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:31:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validacion_Datos_DOS_COBERTURAS_Exitosos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="57.506">
+    <failure message="Validación ==&gt; expected: &lt;Inicio: Tue Jan&gt; but was: &lt;Inicio: Fri Apr&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Validación ==> expected: <Inicio: Tue Jan> but was: <Inicio: Fri Apr>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.validacion_Datos_DOS_COBERTURAS_Exitosos(Digitacion_Poliza_Validacion_Datos_Test.java:293)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:32:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="alternativo_validacion_Datos_Incorrectos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="54.405">
+    <failure message="Validación ==&gt; expected: &lt;Inicio: Tue Jan&gt; but was: &lt;Inicio: Fri Apr&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Validación ==> expected: <Inicio: Tue Jan> but was: <Inicio: Fri Apr>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.alternativo_validacion_Datos_Incorrectos(Digitacion_Poliza_Validacion_Datos_Test.java:192)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:33:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validacion_Datos_DOS_COBERTURAS_Datos_Incorrectos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="54.199">
+    <failure message="Validación ==&gt; expected: &lt;Inicio: Tue Jan&gt; but was: &lt;Inicio: Fri Apr&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Validación ==> expected: <Inicio: Tue Jan> but was: <Inicio: Fri Apr>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.validacion_Datos_DOS_COBERTURAS_Datos_Incorrectos(Digitacion_Poliza_Validacion_Datos_Test.java:360)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:34:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validacion_Datos_DOS_ITEMS_Exitosos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="73.893">
+    <failure message="Validación ==&gt; expected: &lt;Inicio: Tue Jan&gt; but was: &lt;Inicio: Fri Apr&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Validación ==> expected: <Inicio: Tue Jan> but was: <Inicio: Fri Apr>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.validacion_Datos_DOS_ITEMS_Exitosos(Digitacion_Poliza_Validacion_Datos_Test.java:501)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:35:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validacion_Datos_DOS_ITEMS_Datos_Incorrectos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="69.859">
+    <failure message="Validación ==&gt; expected: &lt;Inicio: Tue Jan&gt; but was: &lt;Inicio: Fri Apr&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Validación ==> expected: <Inicio: Tue Jan> but was: <Inicio: Fri Apr>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.validacion_Datos_DOS_ITEMS_Datos_Incorrectos(Digitacion_Poliza_Validacion_Datos_Test.java:594)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:36:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="validacion_Datos_DOS_ITEMS_DOS_COBERTURAS_Exitoso" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test" time="79.817">
+    <failure message="Validación ==&gt; expected: &lt;Inicio: Tue Jan&gt; but was: &lt;Inicio: Fri Apr&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: Validación ==> expected: <Inicio: Tue Jan> but was: <Inicio: Fri Apr>
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Validacion_Datos_Test.validacion_Datos_DOS_ITEMS_DOS_COBERTURAS_Exitoso(Digitacion_Poliza_Validacion_Datos_Test.java:757)
+]]></failure>
+    <system-err><![CDATA[abr 15, 2021 11:37:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

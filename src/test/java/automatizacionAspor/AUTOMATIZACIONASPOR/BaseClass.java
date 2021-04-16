@@ -29,14 +29,12 @@ public class BaseClass {
 	
 	@BeforeEach
 	public void start() throws MalformedURLException{
-		//Crear Driver y Espera expl�cita
+		//Crear Driver y Espera explícita
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
         cap.setBrowserName(BrowserType.CHROME);
         driver = new RemoteWebDriver(new URL("http://rapel.aspor.cl:4444/wd/hub"),cap);
 		
-		
-		//driver = Configuration.createChromeDriver(); //instanciar el driver y el wait(explicito)
 		wait = new WebDriverWait(driver, 60); //max 60 segundos
 		
 		driver.get(Configuration.URL);
@@ -51,7 +49,7 @@ public class BaseClass {
 	
 		
 	/*
-	 * takeScreenShotTest es una clase que permite guardar evidencias de im�genes en un repositorio local.
+	 * takeScreenShotTest es una clase que permite guardar evidencias de imágenes en un repositorio local.
 	 */
 	public static void takeScreenShotTest(WebDriver driver, String imageName) {
 		TakesScreenshot captura = (TakesScreenshot) driver; //castear de un WebDriver a TakesScreenshot

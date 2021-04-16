@@ -32,7 +32,7 @@ class Login_Test extends BaseClass{
 	 */	
 
 
-	//@Test
+	@Test
 	void login_Despliegue() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_001
@@ -71,7 +71,7 @@ class Login_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_001 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void login_Sin_Datos() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_002
@@ -93,7 +93,7 @@ class Login_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_002 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void login_Usuario_Vacio() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_003
@@ -117,7 +117,7 @@ class Login_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_003 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void login_Contrasena_Vacio() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_004
@@ -141,7 +141,7 @@ class Login_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_004 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void login_Contrasena_No_Valida() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_005
@@ -162,7 +162,6 @@ class Login_Test extends BaseClass{
 		
 		takeScreenShotTest(getDriver(), "Login login_Contrasena_No_Valida");
 		WebElement popup_Contrasena_Error = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(), 'Usuario y/o contraseña invalido')]")));
-		//assertEquals("Usuario y/o contraseña inválido", popup_Contrasena_Error.getText(), "Valida PopUp Contraseña Incorrecta");
 		assertEquals("Usuario y/o contraseña invalido", popup_Contrasena_Error.getText(), "Valida PopUp Contraseña Incorrecta");
 		takeScreenShotTest(getDriver(), "Login login_Contrasena_No_Valida");
 		Thread.sleep(3000);
@@ -192,7 +191,7 @@ class Login_Test extends BaseClass{
 		
 		//Validación Acceso a página PORVENIR
 		String tituloPaginaLogin = this.getDriver().getTitle();
-		//assertEquals("Porvenir", tituloPaginaLogin, "Valida título de página");
+		assertEquals("Porvenir", tituloPaginaLogin, "Valida título de página");
 		takeScreenShotTest(getDriver(), "Login login_Exitoso");
 		System.out.println("Prueba PoC_FUN_006 Exitosa");	
 	}

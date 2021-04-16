@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="117.774" tests="6" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test" time="309.055" tests="6" errors="1" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,24 +60,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="login_Sin_Datos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="17.253"/>
-  <testcase name="login_Contrasena_Vacio" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="18.503"/>
-  <testcase name="login_Usuario_Vacio" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="25.281"/>
-  <testcase name="login_Contrasena_No_Valida" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="10.722">
-    <error message="element not interactable&#10;  (Session info: chrome=89.0.4389.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-LI3EA6Q&apos;, ip: &apos;10.212.134.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.e1iT4L}, goog:chromeOptions: {debuggerAddress: localhost:36151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 55967a6b5e7136451aabca4466848b47" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
+  <testcase name="alternativo_Sin_Datos_Crear_Plan_Y_Guardar" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test" time="48.766"/>
+  <testcase name="plan_Pagos_Exitosos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test" time="54.734"/>
+  <testcase name="alternativo_Datos_Incorrectos_Fecha_Primer_Vencimiento_Anterior_Y_Vigencias_Incorrectas" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test" time="63.758"/>
+  <testcase name="alternativo_Datos_Incorrectos_Valores_Negativos" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test" time="58.413"/>
+  <testcase name="alternativo_Datos_Incorrectos_Fecha_Primer_Vencimiento" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test" time="41.338"/>
+  <testcase name="alternativo_Datos_Incorrectos_Crear_Plan" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test" time="42.035">
+    <error message="element click intercepted: Element &lt;input type=&quot;text&quot; name=&quot;primeraCuota&quot; id=&quot;primeraCuota&quot; style=&quot;max-width:150px;display:inline&quot; class=&quot;fecha hasDatepicker&quot; onchange=&quot;validaDiaPago(&apos;#primeraCuota&apos;)&quot;&gt; is not clickable at point (727, 792). Other element would receive the click: &lt;td class=&quot; ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled&quot;&gt;...&lt;/td&gt;&#10;  (Session info: chrome=89.0.4389.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-LI3EA6Q&apos;, ip: &apos;10.212.134.201&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.FtXpy7}, goog:chromeOptions: {debuggerAddress: localhost:33703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 14b56077b8583c2687136f5325566b1d" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <input type="text" name="primeraCuota" id="primeraCuota" style="max-width:150px;display:inline" class="fecha hasDatepicker" onchange="validaDiaPago('#primeraCuota')"> is not clickable at point (727, 792). Other element would receive the click: <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">...</td>
   (Session info: chrome=89.0.4389.114)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-LI3EA6Q', ip: '10.212.134.201', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.e1iT4L}, goog:chromeOptions: {debuggerAddress: localhost:36151}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 55967a6b5e7136451aabca4466848b47
-	at automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test.login_Contrasena_No_Valida(Login_Test.java:151)
-</error>
-    <system-err><![CDATA[abr 15, 2021 11:43:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /tmp/.com.google.Chrome.FtXpy7}, goog:chromeOptions: {debuggerAddress: localhost:33703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: http://172.17.0.2:4444/sess..., se:cdpVersion: 89.0.4389.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14b56077b8583c2687136f5325566b1d
+	at automatizacionAspor.AUTOMATIZACIONASPOR.Digitacion_Poliza_Plan_Pagos_Test.alternativo_Datos_Incorrectos_Crear_Plan(Digitacion_Poliza_Plan_Pagos_Test.java:158)
+]]></error>
+    <system-err><![CDATA[abr 15, 2021 11:25:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="login_Despliegue" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="19.775"/>
-  <testcase name="login_Exitoso" classname="automatizacionAspor.AUTOMATIZACIONASPOR.Login_Test" time="26.234"/>
 </testsuite>

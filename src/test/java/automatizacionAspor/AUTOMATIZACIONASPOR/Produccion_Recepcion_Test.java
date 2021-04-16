@@ -43,7 +43,7 @@ class Produccion_Recepcion_Test extends BaseClass{
 		Thread.sleep(3000);	
 	}
 	
-	//@Test
+	@Test
 	void despliegue_Recepcion() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_007
@@ -88,7 +88,7 @@ class Produccion_Recepcion_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_007 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void despliegue_Recepcion_Poliza() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_008
@@ -151,7 +151,7 @@ class Produccion_Recepcion_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_008 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void ingresar_Recepcion_Poliza_Sin_Datos() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_009
@@ -179,7 +179,7 @@ class Produccion_Recepcion_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_009 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void ingresar_Recepcion_Poliza_Datos_Obl_Incompletos() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_010
@@ -212,7 +212,7 @@ class Produccion_Recepcion_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_010 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void ingresar_Recepcion_Poliza_Datos_Obl_Incorrectos() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_011
@@ -283,7 +283,7 @@ class Produccion_Recepcion_Test extends BaseClass{
 		System.out.println("Prueba PoC_FUN_012 Exitosa");	
 	}
 	
-	//@Test
+	@Test
 	void clic_Hip_Poliza_Generada() throws Exception {
 		/*
 		 * Implementación: PoC_FUN_013
